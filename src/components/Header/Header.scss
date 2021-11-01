@@ -1,0 +1,59 @@
+nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    padding: 18px;
+    transition: background-color .2s linear;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+
+            img {
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+
+        .signed-user-wrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .user {
+                color: #E52114;
+                background-color: white;
+                padding: 8px 17px;
+                border: none;
+                border-radius: 2px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .sign-btn {
+            color: white;
+            background-color: #E52114;
+            padding: 8px 17px;
+            border: none;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+
+    }
+}
+
+.nav-mobile {
+    background-color: #111 !important;
+}
+
+.d-none {
+    display: none;
+}

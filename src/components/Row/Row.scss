@@ -1,0 +1,47 @@
+.row {
+    .title {
+        font-size: 46px;
+        margin: 12px 0;
+        margin-left: 10px;
+
+        @media screen and (max-width: 425px) {
+            font-size: 32px;
+        }
+    }
+
+    .row__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        .row__poster {
+            cursor: pointer;
+
+            img {
+                cursor: pointer;
+                height: 210px;
+                width: 200px;
+                width: auto;
+                object-fit: contain;
+                padding: 10px;
+                transition: transform .1s linear;
+            }
+
+            img.largeRow {
+                height: 410px;
+            }
+
+            img:hover {
+                transform: scale(1.08);
+            }
+        }
+
+    }
+
+    .row__wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+}
